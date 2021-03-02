@@ -7,7 +7,6 @@ class Solution:
             for j in range(length):
                 if board[i][j] != '.':
                     if board[i][j] in hashTemp:
-                        print('What?')
                         return False
                     hashTemp[board[i][j]] = True
             hashTemp = defaultdict(bool)
@@ -16,7 +15,6 @@ class Solution:
             for j in range(length):
                 if board[j][i] != '.':
                     if board[j][i] in hashTemp:
-                        print('Whae?')
                         return False
                     hashTemp[board[j][i]] = True
             hashTemp = defaultdict(bool)
@@ -26,7 +24,6 @@ class Solution:
                     for j in range(3*qj, 3*(qj+1), 1):
                         if board[j][i] != '.':
                             if board[j][i] in hashTemp:
-                                print('Whae?')
                                 return False
                             hashTemp[board[j][i]] = True
                 hashTemp = defaultdict(bool)
